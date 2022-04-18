@@ -1,0 +1,206 @@
+.last-grid{     
+    background-image: url(../../img/Shadow-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    @include mini{
+        padding-top: 21px;
+        padding-bottom: 71px;
+        background-image: url(../../img/Shadow-footer-mobile.png);
+    }  
+    @include mobile{
+        padding-top: 21px;
+        padding-bottom: 71px;
+        background-image: url(../../img/Shadow-footer-mobile.png);
+    }   
+    @include tablet{
+        padding-top: 21px;
+        padding-bottom: 71px;
+    }
+    @include desktop{
+        padding-top: 20.5px;
+        padding-bottom: 168px;
+    }
+}
+
+.wrap-item{ 
+ background-color:var(--text-color);
+ @include mini{
+    padding: 37px 20px 33px 20px;
+    border-radius: 0;
+ }
+ @include mobile{
+     padding: 37px 20px 33px 20px;
+     border-radius: 0;
+ }
+ @include tablet{
+    padding: 37px 21px 18px 20px;
+    border-radius: 5px;
+ }
+ @include desktop{
+    padding: 37px 21px 18px 20px;
+    border-radius: 5px;
+ }
+}
+
+.third-grid{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    @include mini{
+        margin-top: -19px;
+        margin-left: 0;
+    }
+    @include mobile{
+        margin-top: -19px;
+        margin-left: 0;
+    }
+    @include tablet {
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+    
+    @include desktop {
+        margin-top: -15px;
+        margin-left: -30px;
+    }
+}
+.third-grid::before{
+    position: absolute;    
+    background-color: var(--before-item);
+    @include mini{
+        display:none;
+    }
+    @include mobile{
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }    
+    @include desktop {
+        display: block;
+        content: "";
+        width: 851px;
+        height: 1px;
+        transform: translate(4%, 50%);
+    }
+}
+
+.third-grid__item{
+    position: relative;    
+    @include mini{
+        margin-top: 19px;
+        margin-left: 0;
+        flex-basis: calc((50% -19px *1)/1);
+    }
+    @include mobile{
+        margin-top: 19px;
+        margin-left: 0;
+        flex-basis: calc((50% -19px *1)/1);
+    }
+    @include tablet {
+        margin-top: 15px;
+        margin-left: 15px;
+        flex-basis: calc((95.7% -15px *2)/2);
+    }    
+    @include desktop {
+        margin-top: 15px;
+        margin-left: 30px;
+        flex-basis: calc((50% -30px *3)/3);
+    }
+}
+
+ul li:nth-child(1) .bg-block{
+    background-color: var(--secondary-bg);
+}
+
+ul li:nth-child(2) .bg-block {
+    background-color: var(--secondary-bg);
+}
+ul li:nth-child(3) .bg-block {
+    background-color: var(--secondary-bg);
+}
+
+.bg-block{    
+    background-color: var(--bg-item);
+    @include mini{
+        width: 240px;
+        height: 41px;
+    }
+    @include mobile{
+        width: 401px;
+        height: 41px;
+    }
+    @include tablet {
+        width: 100%;
+        height: 41px;
+    }    
+    @include desktop {
+        width: 266px;
+        height: 40px;
+    }
+}
+
+.third-grid__item:nth-child(8):before{
+position: absolute;
+background-color: var(--before-item);
+@include mini{
+    display: none;
+}
+@include mobile{
+    display: none;
+}
+@include tablet {
+    display: none;
+}
+@include desktop {
+    display: block;
+    content: "";
+    width: 295px;
+    height: 1px;
+    transform: translate(-4%, -720%);
+}
+}
+.third-grid__item:nth-child(9):before {
+    position: absolute;
+    
+    background-color: var(--before-item);
+    @include mini {
+        display: none;
+    }
+@include mobile {
+    display: none;
+}
+@include tablet {
+    display: none;
+}
+@include desktop {
+    display: block;
+    content: "";
+    width: 265px;
+    height: 1px;
+    transform: translate(0%, -720%);
+}
+}
+.third-grid__item:nth-child(7):before {
+    position: absolute;    
+    background-color: var(--before-item);
+    @include mini {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }    
+    @include desktop {
+        display: block;
+        content: "";
+        width: 265px;
+        height: 1px;
+        transform: translate(0%, -720%);
+    }
+}

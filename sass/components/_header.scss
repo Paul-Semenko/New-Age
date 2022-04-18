@@ -1,0 +1,48 @@
+.header{    
+    background-color: var(--secondary-bg);
+}
+.language-bar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.language-bar__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;    
+    font-weight: 400;
+    text-align: center;
+    width: 39px;
+    height: 24px;
+    border-radius: 4px;
+    color: var(--nav-bg);
+    background-color: var(--language-bg);     
+    &:hover,    
+    &:focus{        
+        background-color: var(--nav-bg);
+        color: var(--secondary-bg);
+    }
+}
+
+// ----------------------Active State for Language Bar-------------//
+
+#activate-li,
+#activate-second-li,
+#activate-third-li{
+    display: none;
+}
+
+#activate-li:checked~label .li-item,
+#activate-second-li:checked~label .second-li,
+#activate-third-li:checked~label .third-li{
+    background-color: var(--nav-bg);
+    color: var(--secondary-bg);
+   
+}
+.li-item,
+.second-li{
+    margin-left: 2px;
+}
+

@@ -1,0 +1,120 @@
+.six-cards{    
+    padding-bottom: 20.5px; 
+    @include mini{
+        padding-top: 9.5px;
+    }
+    @include mobile{
+        padding-top: 9.5px;
+    }
+    @include tablet{
+        padding-top: 9.5px;
+    }
+    @include desktop{
+        padding-top: 13.5px;
+    }
+}
+.second-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    @include mini{
+        margin-right: -19px;
+        margin-top: -19px;
+    }
+    @include mobile{
+        margin-right: -19px;
+        margin-top: -19px;
+    }
+    @include tablet {
+        margin-right: -19px;
+        margin-top: -19px;
+    }
+    
+    @include desktop {
+        margin-right: -20px;
+        margin-top: -20px;
+    }
+}
+.second-grid__item{
+    
+    
+    @include mini{
+        margin-top: 19px;
+        margin-right: 19px;
+        flex-basis: calc((100% -19px *1)/1);
+    }
+    @include mobile{
+        margin-top: 19px;
+        margin-right: 19px;
+        flex-basis: calc((91.7% -19px *2)/2);
+    }
+    @include tablet {
+        margin-top: 19px;
+        margin-right: 19px;
+        flex-basis: calc((92.2% -19px *3)/3);
+    }    
+    @include desktop {
+        margin-top: 20px;
+        margin-right: 20px;
+        flex-basis: calc((60% -20px *6)/6);
+    }
+}
+.block-item{
+     
+    background-color:var(--block-bg);
+    border: 1.49px solid var(--block-bg);
+    @include mini{
+        width: 100%;
+        height: 101px;
+    }
+    @include mobile{
+        width: 100%;
+        height: 101px;
+    }
+    @include tablet {
+        width: 100%;
+        height: 101px;
+    }    
+    @include desktop {
+        width: 133px;
+        height: 100px;
+    }
+}
+.link-more {    
+    display: block;
+    margin-top: 24px;    
+    margin-right: auto;
+    font-size: 14px;
+    color: var(--link-button-color);
+    font-weight: bold;
+    font-family: var(--secondary-font);    
+    text-transform: uppercase;
+    @include mini{
+        display:block;
+        margin-left: 120px;        
+    }
+    @include mobile{
+        display:block;
+        margin-left: 200px;
+    }  
+    @include tablet {
+        display:none;
+    }    
+    @include desktop{
+        display: none;
+    }
+}
+.second-grid__item--mobile{
+    @include mini{ 
+        display: none;
+    }
+    @include mobile{
+      display:none;
+    }
+    @include tablet {
+        display:block
+    }    
+    @include desktop{
+        display:block;
+    }
+}
